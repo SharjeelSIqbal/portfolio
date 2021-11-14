@@ -3,13 +3,14 @@ const Page = () => {
   return (
     <Container>
       <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
-        Hello, I&apos;m a full stack developer based in Anaheim, California!
+        Hello, I&apos;m a Software Engineer based in Anaheim, California!
       </Box>
       <Box display={{md:'flex'}}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Sharjeel Iqbal
           </Heading>
+          <p>Software Engineer | Musician | Coding Enthusiast  </p>
         </Box>
       </Box>
     </Container>
