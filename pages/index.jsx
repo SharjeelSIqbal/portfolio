@@ -3,7 +3,7 @@ const Page = () => {
   return (
     <Container>
       <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
-        Hello, I&apos;m a fxxull stack developer based in Anaheim, California!
+        Hello, I&apos;m a Software Engineer based in Anaheim, California!
       </Box>
       <Box display={{md:'flex'}}>
         <Box flexGrow={1}>
