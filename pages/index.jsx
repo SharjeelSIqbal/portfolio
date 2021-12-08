@@ -88,18 +88,24 @@ const Page = () => {
             Managed workflow by delegating tasks to my colleagues based on their individual strengths.
         </BioSection>
         <BioSection>
-          <BioYear> 2019 </BioYear>
+          <BioYear> 2019-2020</BioYear>
           <Heading as="h4" size="xs" >Hibachi Steakhouse, Server/Host</Heading>
           Planned and organized seating based on occupation, upcoming reservations, and walk-in guests.
           Cooperated with chefs to deliver quality service to guests.
           Maintained quality and safety standards by following health code procedures for food handlers.
         </BioSection>
         <BioSection>
-          <BioYear>2018</BioYear>
+          <BioYear>2018-2021</BioYear>
           <Heading as="h4" size="xs" >Dream Decor, Coordinator</Heading>
           Coordinated events following a rigid schedule to keep the event moving toward the right direction.
           Communicated with clients to plan dates, pick suitable venues, and choose desire decorations for their events.
           Managed and set-up decorations at venues, as specified by the client, catering to both small (25+) and large (250+) parties.
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          <Heading as="h4" size="xs">LearningFuze, Certificate of Completion</Heading>
+          Dedicated over 800+ hours to gain coding experience (70/hours per week) applying computer science fundamentals in a
+          simulated work environment.
         </BioSection>
       </Section>
       <Section>
