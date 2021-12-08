@@ -102,6 +102,12 @@ const Page = () => {
           Managed and set-up decorations at venues, as specified by the client, catering to both small (25+) and large (250+) parties.
         </BioSection>
       </Section>
+      <Section>
+        <Heading as="h3" variant="section-title">I {`\u2665`} </Heading>
+        <Paragraph>
+          Music, Art, Playing Guitar and Piano, Video Games, Travelling, Hiking, Reading, Basketball
+        </Paragraph>
+      </Section>
     </Container>
 
   )
