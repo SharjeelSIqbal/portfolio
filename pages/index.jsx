@@ -1,6 +1,5 @@
 import Section from '../components/section'
 import  NextLink  from 'next/link'
-
 import { Container,
         Button,
         Box,
@@ -15,7 +14,7 @@ import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
-
+import { IoLogoGithub, IoLogoLinkedIn } from 'react-icons/io5'
 const Page = () => {
   return (
     <Layout>
