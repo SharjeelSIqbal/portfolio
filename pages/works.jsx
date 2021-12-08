@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import pitchurPerfectThumbnail from '../public/images/pitchur-perfect.jpeg'
+import pitchurPerfectThumbnail from '../public/images/pitchur-perfect.png'
 import cardDeck from '../public/images/shadow-deck.png'
 const Works = () => {
   return (
