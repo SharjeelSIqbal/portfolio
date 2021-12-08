@@ -66,12 +66,12 @@ const Navbar = props => {
             mt={{base:4, nmd: 0}}
           >
             <LinkItem href="/works" path={path}>
-              Projects
+              Works
             </LinkItem>
-
           </Stack>
           <Box flex={1} align="right">
             <ThemeToggleButton />
+          </Box>
             <Box ml={2} display={{base: 'inline-block', md:'none'}}>
               <Menu>
                 <MenuButton
@@ -93,7 +93,7 @@ const Navbar = props => {
                 </MenuList>
               </Menu>
             </Box>
-          </Box>
+
         </Container>
       </Box>
   )
