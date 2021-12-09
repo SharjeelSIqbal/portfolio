@@ -8,13 +8,19 @@ import { Container,
         Link,
         useColorModeValue,
         UnorderedList,
-        ListItem
+        List,
+        ListItem,
+        SimpleGrid,
+        Icon
       } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
-import { IoLogoGithub, IoLogoLinkedIn } from 'react-icons/io5'
+import { IoLogoGithub  } from 'react-icons/io5'
+import { AiFillLinkedin } from 'react-icons/ai'
+import { BiWorld } from 'react-icons/bi'
+
 const Page = () => {
   return (
     <Layout>
@@ -74,12 +80,8 @@ const Page = () => {
         </Section>
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Bio
+            Professional Experience
           </Heading>
-          <BioSection>
-            <BioYear>1996</BioYear>
-            Born in Kirachi, Pakistan.
-          </BioSection>
           <BioSection>
           <BioYear>2015-2018</BioYear>
           <Heading as="h4" size="xs" >matchaLOVE, Supervisor</Heading>
@@ -102,6 +104,9 @@ const Page = () => {
             Communicated with clients to plan dates, pick suitable venues, and choose desire decorations for their events.
             Managed and set-up decorations at venues, as specified by the client, catering to both small (25+) and large (250+) parties.
           </BioSection>
+        </Section>
+        <Section>
+          <Heading as="h3" variant="section-title">Education</Heading>
           <BioSection>
             <BioYear>2021</BioYear>
             <Heading as="h4" size="xs">LearningFuze, Certificate of Completion</Heading>
@@ -114,6 +119,34 @@ const Page = () => {
           <Paragraph>
             Music, Art, Playing Guitar and Piano, Video Games, Travelling, Hiking, Reading, Basketball
           </Paragraph>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/SharjeelSIqbal" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/> }>
+                  @SharjeelSiqbal
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/sharjeel-iqbal/" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={AiFillLinkedin} />}>
+                  @Sharjeel-Iqbal
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://drive.google.com/file/d/17wIXafYkcn7CEiSSbdRfByggr092-5gC/view?usp=sharing" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={BiWorld} /> }>
+                  @Sharjeel-Iqbal-Resume
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
