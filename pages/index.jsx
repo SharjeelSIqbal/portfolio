@@ -79,6 +79,10 @@ const Page = () => {
           </Box>
         </Section>
         <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">Tech Stack</Heading>
+          <p>JavaScript | ES5/ES6 | CSS | SASS | MUI | React.js | Next.js | Node.js | Express.js | socket.io | SQL(PostgreSQL) | NoSQL(MongoDB) | Mongoose | AWS | S3 | Java | Python </p>
+        </Section>
+        <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             Professional Experience
           </Heading>
@@ -120,7 +124,7 @@ const Page = () => {
             Music, Art, Playing Guitar and Piano, Video Games, Travelling, Hiking, Reading, Basketball
           </Paragraph>
         </Section>
-        <Section delay={0.3}>
+        <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
             On the web
           </Heading>
