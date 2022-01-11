@@ -38,8 +38,8 @@ const ShadowDeck = () => (
       <WorkImage src='/images/works/shadow-deck/shadow-deck.png' alt="Shadow Deck home page" />
       <WorkImage src='/images/works/shadow-deck/my-deck.png' alt="Shadow Deck view my deck" />
       <WorkImage src='/images/works/shadow-deck/search.png' alt="Shadow Deck search for a card" />
-      <WorkImage src='/images/works/shadow-deck/add-card.png' alt="Shadow Deck add a card" /> */}
-      <WorkImage src='/images/works/shadow-deck/delete-card.png' alt="Shadow Deck delete a card" /> */}
+      <WorkImage src='/images/works/shadow-deck/add-card.png' alt="Shadow Deck add a card" />
+      <WorkImage src='/images/works/shadow-deck/delete-card.png' alt="Shadow Deck delete a card" />
     </Container>
   </Layout>
 )
