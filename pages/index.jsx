@@ -11,17 +11,38 @@ import { Container,
         List,
         ListItem,
         SimpleGrid,
-        Icon
+        Icon,
+        FormControl,
+        FormLabel,
+        FormHelperText,
+        FormErrorMessage,
+        Stack,
       } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
+import { FormInput, FormTextarea, FormSubmit } from '../components/form'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear, BioDescription } from '../components/bio'
 import Layout from '../components/layouts/article'
 import { IoLogoGithub  } from 'react-icons/io5'
-import { AiFillLinkedin } from 'react-icons/ai'
-import { BiWorld } from 'react-icons/bi'
+import { AiFillLinkedin, AiOutlineSend, AiFillFilePdf } from 'react-icons/ai'
+import { IoMdSend } from 'react-icons/io'
+import { useReducer, useState } from 'react'
+
+const initialState = {
+  email: '',
+  textarea: '',
+  subject: '',
+}
 
 const Page = () => {
+  const [ values, setvalues ] = useState(initialState
+    )
+  const handleInputChange = e => {
+
+  }
+
+  const contactMeGreeting = "Hello Sharjeel, I'd love to connect and talk with you about <opportunity>. Please contact me at <email/phone>. Looking forward to hearing back from you!"
+
   return (
     <Layout>
       <Container>
@@ -59,12 +80,12 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Sharjeel is a software engineer based in Anaheim, California with a passion
-            to build whatever comes to his mind. On most days, you can see him at a local
-            coffee shop coding away for hours. He designs and implements his own ideas and
+            to build whatever comes to his mind. He works at Headwire.inc configuring, customizing,
+            and authoring CMS components. On most days, you can catch him at a local
+            coffee shop coding away. He designs and implements his own ideas and
             loves to work with others who share the same passion as him. When not online
-            you can find him balling up, playing music, and reading. He is currently working
-            on a mobile chat application that helps native and non-native speakers communicate
-            seamlessly. You can checkout his most recent application {' '}
+            you can find him balling up, playing music, reading, snowboarding, or attending concerts.
+            His latest project is on a recipe application that helps create a recipe book for a specific diet.
             <NextLink href="/works/pitchur-perfect">
               <Link>Pitchur Perfect</Link>
             </NextLink>
@@ -80,7 +101,7 @@ const Page = () => {
         </Section>
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">Tech Stack</Heading>
-          <p>JavaScript | ES5/ES6 | CSS | SASS | MUI | React.js | Next.js | Node.js | Express.js | socket.io | SQL(PostgreSQL) | NoSQL(MongoDB) | Mongoose | AWS | S3 | Java | Python </p>
+          <p>JavaScript | ES5/ES6 | CSS | SASS | LESS | Bootstrap | MUI | React.js | Next.js | Node.js | Express.js | AEM | CMS | UI/UX | jQuery | socket.io | SQL(PostgreSQL) | NoSQL(MongoDB) | Mongoose | AWS | S3 | Java | Python  </p>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
@@ -89,24 +110,39 @@ const Page = () => {
           <BioSection>
           <BioYear>2015-2018</BioYear>
           <Heading as="h4" size="xs" >matchaLOVE, Supervisor</Heading>
+          <BioDescription>
               Worked directly with the manager to log invoices, take in deliveries, record sales,
               and plan new product releases.
               Trained five new employees to keep up to company standards and learn new recipes.
               Managed workflow by delegating tasks to my colleagues based on their individual strengths.
+          </BioDescription>
           </BioSection>
           <BioSection>
             <BioYear> 2019-2020</BioYear>
             <Heading as="h4" size="xs" >Hibachi Steakhouse, Server/Host</Heading>
+            <BioDescription>
             Planned and organized seating based on occupation, upcoming reservations, and walk-in guests.
             Cooperated with chefs to deliver quality service to guests.
             Maintained quality and safety standards by following health code procedures for food handlers.
+            </BioDescription>
           </BioSection>
           <BioSection>
             <BioYear>2018-2021</BioYear>
             <Heading as="h4" size="xs" >Dream Decor, Coordinator</Heading>
-            Coordinated events following a rigid schedule to keep the event moving toward the right direction.
-            Communicated with clients to plan dates, pick suitable venues, and choose desire decorations for their events.
-            Managed and set-up decorations at venues, as specified by the client, catering to both small (25+) and large (250+) parties.
+            <BioDescription>
+              Coordinated events following a rigid schedule to keep the event moving toward the right direction.
+              Communicated with clients to plan dates, pick suitable venues, and choose desire decorations for their events.
+              Managed and set-up decorations at venues, as specified by the client, catering to both small (25+) and large (250+) parties.
+            </BioDescription>
+          </BioSection>
+          <BioSection>
+            <BioYear>2021-</BioYear>
+            <Heading as="h4" size="xs">Headwire.inc, Junior Front End Developer</Heading>
+            <BioDescription>
+              Produce reusable and customizable components for the Adobe Expreience Manager CMS.
+              Address and solve issues presented by QA and UI/UX team following a strict sprint schedule.
+              Optomize code by applying best SEO practices to increase acessibility and performance.
+            </BioDescription>
           </BioSection>
         </Section>
         <Section>
@@ -114,14 +150,16 @@ const Page = () => {
           <BioSection>
             <BioYear>2021</BioYear>
             <Heading as="h4" size="xs">LearningFuze, Certificate of Completion</Heading>
+            <BioDescription>
             Dedicated over 800+ hours to gain coding experience (70/hours per week) applying computer science fundamentals in a
             simulated work environment.
+            </BioDescription>
           </BioSection>
         </Section>
         <Section>
           <Heading as="h3" variant="section-title">I {`\u2665`} </Heading>
           <Paragraph>
-            Music, Art, Playing Guitar and Piano, Video Games, Travelling, Hiking, Reading, Basketball
+            Art, Guitar, Piano, Video Games, Travelling, Hiking, Reading, Basketball, Snowboarding, Festivals, Concerts
           </Paragraph>
         </Section>
         <Section delay={0.4}>
@@ -145,12 +183,30 @@ const Page = () => {
             </ListItem>
             <ListItem>
               <Link href="https://drive.google.com/file/d/17wIXafYkcn7CEiSSbdRfByggr092-5gC/view?usp=sharing" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={BiWorld} /> }>
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={AiFillFilePdf} /> }>
                   @Sharjeel-Iqbal-Resume
                 </Button>
               </Link>
             </ListItem>
           </List>
+        </Section>
+        <Section delay={0.5}>
+          <Heading as="h4" variant="section-title">
+            Contact Me!
+          </Heading>
+          <FormControl>
+            <FormInput onChange={handleInputChange} placeholder="Email" type="email" size="md" />
+            <FormInput placeholder="Subject" onChange={handleInputChange} size="md" />
+            <FormTextarea
+            onChange={handleInputChange}
+            placeholder={contactMeGreeting + " Press 'Tab' to autofill form."}
+            variant="filled"
+            size="xl">
+            </FormTextarea>
+            <Stack direction="row" justify="end">
+              <FormSubmit rightIcon={<IoMdSend />} colorScheme="teal" variant="solid">Send</FormSubmit>
+            </Stack>
+          </FormControl>
         </Section>
       </Container>
     </Layout>
