@@ -25,23 +25,12 @@ import { BioSection, BioYear, BioDescription } from '../components/bio'
 import Layout from '../components/layouts/article'
 import { IoLogoGithub  } from 'react-icons/io5'
 import { AiFillLinkedin, AiOutlineSend, AiFillFilePdf } from 'react-icons/ai'
-import { IoMdSend } from 'react-icons/io'
-import { useReducer, useState } from 'react'
 
-const initialState = {
-  email: '',
-  textarea: '',
-  subject: '',
-}
+import { useReducer, useState } from 'react'
+import { ContactMe } from '../components/contact-me'
+
 
 const Page = () => {
-  const [ values, setvalues ] = useState(initialState
-    )
-  const handleInputChange = e => {
-
-  }
-
-  const contactMeGreeting = "Hello Sharjeel, I'd love to connect and talk with you about <opportunity>. Please contact me at <email/phone>. Looking forward to hearing back from you!"
 
   return (
     <Layout>
@@ -190,24 +179,7 @@ const Page = () => {
             </ListItem>
           </List>
         </Section>
-        <Section delay={0.5}>
-          <Heading as="h4" variant="section-title">
-            Contact Me!
-          </Heading>
-          <FormControl>
-            <FormInput onChange={handleInputChange} placeholder="Email" type="email" size="md" />
-            <FormInput placeholder="Subject" onChange={handleInputChange} size="md" />
-            <FormTextarea
-            onChange={handleInputChange}
-            placeholder={contactMeGreeting + " Press 'Tab' to autofill form."}
-            variant="filled"
-            size="xl">
-            </FormTextarea>
-            <Stack direction="row" justify="end">
-              <FormSubmit rightIcon={<IoMdSend />} colorScheme="teal" variant="solid">Send</FormSubmit>
-            </Stack>
-          </FormControl>
-        </Section>
+        <ContactMe />
       </Container>
     </Layout>
   )
