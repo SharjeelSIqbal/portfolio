@@ -39,21 +39,22 @@ export const ContactMe = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     axios.post("/api/mail", {
-      body: values
-    }).then( result => console.log(result))
+      values
+    }).then( result => console.log(result.data))
   }
 
 
   return (
-    <Section delay={0.5}>
+    <Section  delay={0.5}>
       <Heading as="h4" variant="section-title">
         Contact Me!
       </Heading>
-      <form type="submit" onSubmit={handleSubmit}>
-        <FormInput onChange={handleInputChange} placeholder="Email" type="email" size="md" name="email" value={values.email} />
-        <FormInput placeholder="Subject" onChange={handleInputChange} size="md" value={values.subject} name="subject" />
-        <FormInput placeholder="Phone" onChange={handleInputChange} size="md" value={values.phone} name="phone" />
+      <form id="contact-me" type="submit" onSubmit={handleSubmit}>
+        <FormInput key={"email"} placeholder="Email*" onChange={handleInputChange} type="email" size="md" name="email" value={values.email} required />
+        <FormInput key={"subject"} placeholder="Subject*" onChange={handleInputChange} size="md" value={values.subject} name="subject" required />
+        <FormInput key={"phone"} placeholder="Phone" onChange={handleInputChange} size="md" value={values.phone} name="phone" />
         <FormTextarea
+          key={"textarea"}
           name="textarea"
           onChange={handleInputChange}
           onKeyPress={handleAutoFill}
@@ -63,11 +64,9 @@ export const ContactMe = () => {
           value={values.textarea}>
         </FormTextarea>
         <Stack direction="row" justify="end">
-
         <NoSsr>
-          <FormSubmit rightIcon={<IoMdSend />} colorScheme="teal" type="submit" variant="solid">Send</FormSubmit>
+          <FormSubmit key="submitButton" rightIcon={<IoMdSend />} colorScheme="teal" type="submit" onSubmit={handleSubmit} variant="solid">Send</FormSubmit>
         </NoSsr>
-
         </Stack>
       </form>
     </Section>
