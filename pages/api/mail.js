@@ -24,10 +24,10 @@ export default async function handler(req, res) {
         html: `<div>
           <h1>Hello!</h1>
           <p>
-            Thank you so much for reaching out to me.
+            Thank you so much for reaching out to me. :)
             I might be busy with other projects or work,
             but your email is very important to me, and I will get back to you as soon as possible.
-            Looking forward to speaking with you!
+            I'm looking forward to speaking with you!
             <br>
             <br>
             <h3>Best Regards,</h3>

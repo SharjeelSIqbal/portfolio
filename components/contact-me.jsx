@@ -40,7 +40,7 @@ export const ContactMe = () => {
     e.preventDefault()
     axios.post("/api/mail", {
       values
-    }).then( result => console.log(result.data))
+    }).then(() => setvalues(initialState))
   }
 
 

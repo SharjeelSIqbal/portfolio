@@ -171,7 +171,7 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://drive.google.com/file/d/17wIXafYkcn7CEiSSbdRfByggr092-5gC/view?usp=sharing" target="_blank">
+              <Link href="https://drive.google.com/file/d/1qGjRHr3IboeTQdEbA2Vc11YJpyEGRVWV/view?usp=sharing" target="_blank">
                 <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={AiFillFilePdf} /> }>
                   @Sharjeel-Iqbal-Resume
                 </Button>
