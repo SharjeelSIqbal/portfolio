@@ -23,9 +23,11 @@ const LinkItem = ({href, path, children}) => {
   return (
     <NextLink href={href}>
       <Link
+
       p={2}
       bg={active ? 'glassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
+      borderRadius={6}
       >
         {children}
       </Link>
@@ -75,6 +77,8 @@ const Navbar = props => {
             <Box ml={2} display={{base: 'inline-block', md:'none'}}>
               <Menu>
                 <MenuButton
+                  id="mobileMenu"
+                  key={"hamburgerMobileMenu"}
                   as={IconButton}
                   icon={<HamburgerIcon />}
                   variant="outline"
