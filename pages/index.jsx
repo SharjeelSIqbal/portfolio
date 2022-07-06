@@ -74,9 +74,9 @@ const Page = () => {
             coffee shop coding away. He designs and implements his own ideas and
             loves to work with others who share the same passion as him. When not online
             you can find him balling up, playing music, reading, snowboarding, or attending concerts.
-            His latest project is on a recipe application that helps create a recipe book for a specific diet.
+            Check out one of his latest projects
             <NextLink href="/works/pitchur-perfect">
-              <Link>Pitchur Perfect</Link>
+              <Link> Pitchur Perfect</Link>
             </NextLink>
             .
           </Paragraph>
