@@ -41,13 +41,14 @@ export const ContactMe = () => {
   }
 
   const handleSubmit = (e) => {
+    setIsError(false)
     e.preventDefault()
     axios.post("/api/mail", {
       values
     }).then(() => {
         setvalues(initialState)
         setIsSent(true)
-    }).catch(() => setisError(true))
+    }).catch(() => setIsError(true))
   }
 
 
@@ -89,7 +90,7 @@ export const ContactMe = () => {
       {isError
         ? <Box align="center">
             <Lottie animationData={errorMark} style={{ width: "75px" }} loop={true} />
-            <Text>Something went wrong please try again later!</Text>
+            <Text>Something went wrong try again later!</Text>
           </Box>
         : null
       }
