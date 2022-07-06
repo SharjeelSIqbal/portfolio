@@ -19,4 +19,5 @@ padding-left: 1rem;
 export const FormSubmit = styled(Button) `
 margin-top:  .5em;
 justify-content: flex-end;
+transition: all 0.5s ease;
 `
