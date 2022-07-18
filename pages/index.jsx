@@ -97,22 +97,12 @@ const Page = () => {
             Professional Experience
           </Heading>
           <BioSection>
-          <BioYear>2015-2018</BioYear>
-          <Heading as="h4" size="xs" >matchaLOVE, Supervisor</Heading>
-          <BioDescription>
-              Worked directly with the manager to log invoices, take in deliveries, record sales,
-              and plan new product releases.
-              Trained five new employees to keep up to company standards and learn new recipes.
-              Managed workflow by delegating tasks to my colleagues based on their individual strengths.
-          </BioDescription>
-          </BioSection>
-          <BioSection>
-            <BioYear> 2019-2020</BioYear>
-            <Heading as="h4" size="xs" >Hibachi Steakhouse, Server/Host</Heading>
+            <BioYear>2022-</BioYear>
+            <Heading as="h4" size="xs">Headwire.inc, Junior Front End Developer</Heading>
             <BioDescription>
-            Planned and organized seating based on occupation, upcoming reservations, and walk-in guests.
-            Cooperated with chefs to deliver quality service to guests.
-            Maintained quality and safety standards by following health code procedures for food handlers.
+              Produce reusable and customizable components for the Adobe Expreience Manager CMS.
+              Address and solve issues presented by QA and UI/UX team following a strict sprint schedule.
+              Optomize code by applying best SEO practices to increase acessibility and performance.
             </BioDescription>
           </BioSection>
           <BioSection>
@@ -125,12 +115,22 @@ const Page = () => {
             </BioDescription>
           </BioSection>
           <BioSection>
-            <BioYear>2021-</BioYear>
-            <Heading as="h4" size="xs">Headwire.inc, Junior Front End Developer</Heading>
+            <BioYear> 2019-2020</BioYear>
+            <Heading as="h4" size="xs" >Hibachi Steakhouse, Server/Host</Heading>
             <BioDescription>
-              Produce reusable and customizable components for the Adobe Expreience Manager CMS.
-              Address and solve issues presented by QA and UI/UX team following a strict sprint schedule.
-              Optomize code by applying best SEO practices to increase acessibility and performance.
+            Planned and organized seating based on occupation, upcoming reservations, and walk-in guests.
+            Cooperated with chefs to deliver quality service to guests.
+            Maintained quality and safety standards by following health code procedures for food handlers.
+            </BioDescription>
+          </BioSection>
+          <BioSection>
+            <BioYear>2015-2018</BioYear>
+            <Heading as="h4" size="xs" >matchaLOVE, Supervisor</Heading>
+            <BioDescription>
+              Worked directly with the manager to log invoices, take in deliveries, record sales,
+              and plan new product releases.
+              Trained five new employees to keep up to company standards and learn new recipes.
+              Managed workflow by delegating tasks to my colleagues based on their individual strengths.
             </BioDescription>
           </BioSection>
         </Section>
